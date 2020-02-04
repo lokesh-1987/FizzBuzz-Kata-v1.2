@@ -2,7 +2,7 @@ package com.fizzbuzz;
 
 class FizzBuzzConverter {
 
-	String convert() {
-		return "1";
+	String convert(int number) {
+		return String.valueOf(number);
 	}
 }

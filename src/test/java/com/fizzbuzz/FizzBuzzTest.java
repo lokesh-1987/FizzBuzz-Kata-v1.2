@@ -16,6 +16,11 @@ public class FizzBuzzTest {
 	
 	@Test
 	public void testFizzBuzzConverterToGetOne() {
-		assertEquals("1", fizzBuzzConverter.convert());
+		assertEquals("1", fizzBuzzConverter.convert(1));
+	}
+	
+	@Test
+	public void testFizzBuzzConverterToGetTwo() {
+		assertEquals("2", fizzBuzzConverter.convert(2));
 	}
 }
