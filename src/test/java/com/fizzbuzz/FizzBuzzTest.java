@@ -7,6 +7,12 @@ import org.junit.Test;
 
 public class FizzBuzzTest {
 
+	private static final String _1 = "1";
+	private static final String _2 = "2";
+	private static final String FIZZ = "Fizz";
+	private static final String BUZZ = "Buzz";
+	private static final String FizzBuzz = "FizzBuzz";
+	
 	private FizzBuzzConverter fizzBuzzConverter;
 	
 	@Before
@@ -16,41 +22,46 @@ public class FizzBuzzTest {
 	
 	@Test
 	public void testFizzBuzzConverterToGetOne() {
-		assertEquals("1", fizzBuzzConverter.convert(1));
+		assertEquals(_1, fizzBuzzConverter.convert(1));
 	}
 	
 	@Test
 	public void testFizzBuzzConverterToGetTwo() {
-		assertEquals("2", fizzBuzzConverter.convert(2));
+		assertEquals(_2, fizzBuzzConverter.convert(2));
 	}
 	
 	@Test
 	public void testFizzBuzzConverterToGetThree() {
-		assertEquals("Fizz", fizzBuzzConverter.convert(3));
+		assertEquals(FIZZ, fizzBuzzConverter.convert(3));
 	}
 	
 	@Test
 	public void testFizzBuzzConverterToGetSix() {
-		assertEquals("Fizz", fizzBuzzConverter.convert(6));
+		assertEquals(FIZZ, fizzBuzzConverter.convert(6));
 	}
 	
 	@Test
 	public void testFizzBuzzConverterToGetMultiplesOfThreeAsFizz() {
-		assertEquals("Fizz", fizzBuzzConverter.convert(9));
+		assertEquals(FIZZ, fizzBuzzConverter.convert(9));
 	}
 	
 	@Test
 	public void testFizzBuzzConverterToGetFive() {
-		assertEquals("Buzz", fizzBuzzConverter.convert(5));
+		assertEquals(BUZZ, fizzBuzzConverter.convert(5));
 	}
 	
 	@Test
 	public void testFizzBuzzConverterToGetTen() {
-		assertEquals("Buzz", fizzBuzzConverter.convert(10));
+		assertEquals(BUZZ, fizzBuzzConverter.convert(10));
 	}
 	
 	@Test
 	public void testFizzBuzzConverterToGetMultiplesOfFiveAsBuzz() {
-		assertEquals("Buzz", fizzBuzzConverter.convert(25));
+		assertEquals(BUZZ, fizzBuzzConverter.convert(25));
+	}
+	
+	@Test
+	public void testToGetMultiplesOfThreeAndFiveAsFizzBuzz() {
+		assertEquals(FizzBuzz, fizzBuzzConverter.convert(15));
 	}
 }
