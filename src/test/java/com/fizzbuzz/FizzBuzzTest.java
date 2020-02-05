@@ -28,4 +28,9 @@ public class FizzBuzzTest {
 	public void testFizzBuzzConverterToGetThree() {
 		assertEquals("3", fizzBuzzConverter.convert(3));
 	}
+	
+	@Test
+	public void testFizzBuzzConverterToGetSix() {
+		assertEquals("6", fizzBuzzConverter.convert(6));
+	}
 }
