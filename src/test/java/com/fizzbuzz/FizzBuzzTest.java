@@ -26,11 +26,16 @@ public class FizzBuzzTest {
 	
 	@Test
 	public void testFizzBuzzConverterToGetThree() {
-		assertEquals("3", fizzBuzzConverter.convert(3));
+		assertEquals("Fizz", fizzBuzzConverter.convert(3));
 	}
 	
 	@Test
 	public void testFizzBuzzConverterToGetSix() {
-		assertEquals("6", fizzBuzzConverter.convert(6));
+		assertEquals("Fizz", fizzBuzzConverter.convert(6));
+	}
+	
+	@Test
+	public void testFizzBuzzConverterToGetMultiplesOfThreeAsFizz() {
+		assertEquals("Fizz", fizzBuzzConverter.convert(9));
 	}
 }
