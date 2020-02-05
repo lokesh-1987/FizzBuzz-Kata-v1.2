@@ -38,4 +38,9 @@ public class FizzBuzzTest {
 	public void testFizzBuzzConverterToGetMultiplesOfThreeAsFizz() {
 		assertEquals("Fizz", fizzBuzzConverter.convert(9));
 	}
+	
+	@Test
+	public void testFizzBuzzConverterToGetFive() {
+		assertEquals("5", fizzBuzzConverter.convert(5));
+	}
 }
